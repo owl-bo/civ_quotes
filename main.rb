@@ -78,7 +78,7 @@ quotations:
     text: 土地の実りも、家畜の産むもの（すなわち牛の子や羊の子）も祝福される。
     origin: 聖書　申命記28章4節
 
-  - tech: 弓術Archery(弓術Archery)
+  - tech: 弓術(Archery)
     text: 我が身に返ってくる矢を投げてはならない。
     origin: クルディスタン（クルド人）の諺
 
@@ -522,9 +522,9 @@ quotations:
     origin: 聖トマス・アクィナス
     text: 人の救済には三つのことが必要である。彼が信じるべきものを知り、彼が望むべきものを知り、彼がすべきことを知ることだ。
 
-  - tech: ルネサンス(Renaissance Era)
-    origin: 音響学(Acoustics)
-    text: 音響学(Acoustics)
+  - tech: 音響学(Acoustics)
+    origin: ミルトン
+    text: 観衆が一斉に立ち上がる音は、まるで遠くから聞こえる雷鳴のようであった
 
   - tech: 考古学(Archaeology)
     origin: ジョージ・サンタヤナ
@@ -660,7 +660,7 @@ quotations:
 
   - tech: ペニシリン(Penicillin)
     origin: キケロ
-    text: 人の行いのうち、人に健康を施すことより神に近い行いはない。
+    text: 人々に健康を与えること以上に、人々をより神に近づけるためにできることはない
 
   - tech: プラスチック(Plastics)
     origin: 『卒業』より、バック・ヘンリー、カルダー・ウィリンガム
