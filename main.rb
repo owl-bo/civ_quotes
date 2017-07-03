@@ -4,25 +4,27 @@
 
 require 'yaml'
 
-def quote
-  YAML.load(DATA.read)['quotations'].sample
-end
-
 class String
   def colorize(color_code)
     "\e[#{color_code}m#{self}\e[0m"
   end
 end
 
-def puts_main
-  joint = "\n                "
-  q = quote
-  text = q['text'].scan(/.{1,20}/).join(joint)
-  output = <<"EOS"
+class CivQuote
+  class << self
+    def draw
+      YAML.load(DATA.read)['quotations'].sample
+    end
 
-               
+    def say_owl
+      joint = "\n                "
+      q = draw
+      text = q['text'].scan(/.{1,20}/).join(joint)
+      output = <<"EOS"
+
+
                 #{text}
-                
+
                 #{q['tech']}
       )\___/(    #{q['origin']}
      {(@)v(@)}
@@ -30,12 +32,13 @@ def puts_main
       {/^^^\}
 =======`m-m`===========
 
-
 EOS
-  puts output.colorize(31)
+      output.colorize(31)
+    end
+  end
 end
 
-puts_main
+puts CivQuote.say_owl
 
 __END__
 quotations:
@@ -103,7 +106,7 @@ quotations:
     text: 私は神、あなたの主である。あなたは他の何物をも神としてはならない
     origin: 3節
 
-  - tech: 青銅器BronzeWorking(青銅器BronzeWorking)
+  - tech: 青銅器(BronzeWorking)
     text: 青年青銅の槍にて刺し貫かれて、戦場に横たわるは、まことにふさわしきことなり。その死においては、一切が正しきものに映るなり。
     origin: ホメロス
 
